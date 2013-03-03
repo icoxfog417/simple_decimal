@@ -61,6 +61,12 @@ describe("div", function() {
   });
 });
 
+describe("complex", function() {
+  it("test for complex calculation", function() {
+    expect(new sDec(0.1).plus(0.3).minus(0.2).multi(4).div(10) + 0).toBe(0.08);
+  });
+});
+
 describe("toString", function() {
   it("toString test", function() {
     expect(new sDec(10.3010000).toString()).toBe("10.301");
